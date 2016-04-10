@@ -1,7 +1,5 @@
 #pragma once
 
-#define DEBUG_RINGBUFFER_ENABLED 0
-
 class RingBuffer
 {
 
