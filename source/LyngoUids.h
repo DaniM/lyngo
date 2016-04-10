@@ -21,8 +21,7 @@ namespace Message
 	static const Steinberg::FIDString IrTime		 = "IrTime";
 }
 
-//static const unsigned BlockSize				 = 256;
-static const unsigned BlockSize = 300;
+static const unsigned BlockSize				 = 256;
 static const unsigned ZPadBlockSize			 = 2 * BlockSize;
 static const unsigned IrTimeDomainSize		 = BlockSize + 1;
 static const unsigned IrFreqDomainSize		 = (ZPadBlockSize / 2) + 1;
