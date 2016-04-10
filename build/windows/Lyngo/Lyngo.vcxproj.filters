@@ -206,6 +206,9 @@
     <ClCompile Include="..\..\..\source\ui\TextButton.cpp">
       <Filter>ui</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\audio\VstProcessor.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\LyngoProcessor.h" />
@@ -558,6 +561,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\source\ui\TextButton.h">
       <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\audio\VstProcessor.h">
+      <Filter>audio</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

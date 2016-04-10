@@ -10,7 +10,8 @@
 
 FftFir::FftFir(std::array<std::complex<float>, IrFreqDomainSize>& irFreq
 			   , float&									          irTimeAccum)
-	: forward	 (nullptr)
+	: VstFixedBlockSizeProcessor(BlockSize)
+	, forward	 (nullptr)
 	, inverse	 (nullptr)
 	, fwdOut	 (nullptr)
 	, invOut	 (nullptr)
@@ -65,7 +66,7 @@ FftFir::~FftFir()
 	olapHelper    = nullptr;
 }
 
-void FftFir::Process(const float* const in
+void FftFir::ProcessBlock(const float* const in
 					    , float* const  out
 					    , unsigned		sizeInSamples)
 {

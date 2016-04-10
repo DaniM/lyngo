@@ -52,11 +52,8 @@ private:
 
 	std::mutex mutex;
 
-	// collection of processors and ringbuffers (one per channel)
-	std::vector<std::unique_ptr<FftFir>>     processors;
-	std::vector<std::unique_ptr<RingBuffer>> dataIn;
-	std::vector<std::unique_ptr<RingBuffer>> dataOut;
-	std::array<float, BlockSize>			 processHelper;
+	// collection of processors (one per channel)
+	std::vector<std::unique_ptr<FftFir>>			  processors;
 
 	kiss_fftr_cfg								      forward;
 	std::array<std::complex<float>, IrFreqDomainSize> irFreq;

@@ -7,14 +7,11 @@
 #include "utils/RingBuffer.h"
 
 #include <cassert>
-#include <math.h>
 #include <string>
 #include <thread>
 
 LyngoProcessor::LyngoProcessor()
 	: processors()
-	, dataIn()
-	, dataOut()
 	, forward(nullptr)
 	, irFreq()
 	, irTimeZpad()
@@ -85,17 +82,11 @@ tresult PLUGIN_API LyngoProcessor::setActive(TBool state)
 	if (state)
 	{
 		for (unsigned channel = 0; channel < noOfChannels; ++channel)
-		{
-			processors.push_back(std::unique_ptr<FftFir>    (new FftFir    (irFreq		  , irTimeAccum)));
-			dataIn .push_back(std::unique_ptr<RingBuffer>(new RingBuffer(sizeof(float) , RoundUpToNextPowerOfTwo(2 * BlockSize))));
-			dataOut.push_back(std::unique_ptr<RingBuffer>(new RingBuffer(sizeof(float) , RoundUpToNextPowerOfTwo(2 * BlockSize))));
-		}
+			processors.push_back(std::unique_ptr<FftFir>(new FftFir(irFreq, irTimeAccum)));
 	}
 	else
 	{
 		processors.clear();
-		dataIn .clear();
-		dataOut.clear();
 	}
 
 	return AudioEffect::setActive(state);
@@ -112,33 +103,7 @@ tresult PLUGIN_API LyngoProcessor::process(ProcessData& data)
 	{
 		float* in  = data.inputs [0].channelBuffers32[chIndex];
 		float* out = data.outputs[0].channelBuffers32[chIndex];
-		RingBuffer& bufferIn  = *dataIn[chIndex];
-		RingBuffer& bufferOut = *dataOut[chIndex];
-
-		unsigned samplesLeft = data.numSamples;
-		float* frameIn  = in;
-		float* frameOut = out;
-		while (samplesLeft > 0)
-		{
-			const int numSamples = std::min(samplesLeft, BlockSize);
-			
-			bufferIn.Write(frameIn, numSamples);
-			
-			if (bufferIn.GetAvailableElementsForReading() >= BlockSize)
-			{
-				bufferIn.Read(&processHelper.front(), BlockSize);
-				processor->Process(&processHelper.front(), &processHelper.front(), BlockSize);
-				bufferOut.Write(&processHelper.front(), BlockSize);
-			}
-
-			if (bufferOut.GetAvailableElementsForReading() >= numSamples)
-				bufferOut.Read(frameOut, numSamples);
-			
-			frameIn     += numSamples;
-			frameOut    += numSamples;
-			samplesLeft -= numSamples;
-		}
-
+		processor->Process(in, out, data.numSamples);
 		++chIndex;
 	}
 

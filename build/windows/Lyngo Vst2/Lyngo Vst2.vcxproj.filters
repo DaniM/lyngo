@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="audio">
-      <UniqueIdentifier>{8f5f6548-8bfb-4c6d-aaa6-dfa8b18a2c8d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="external">
       <UniqueIdentifier>{80ff1c4e-687d-49c3-8c7f-f2f59430fad4}</UniqueIdentifier>
     </Filter>
@@ -55,11 +52,11 @@
     <Filter Include="ui">
       <UniqueIdentifier>{110729e3-f1c8-42c4-9507-29bff608a300}</UniqueIdentifier>
     </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{f13aa480-3797-4ff2-8449-ee02f1014bc1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\audio\FftFir.cpp">
-      <Filter>audio</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\source\external\kiss_fft130\kiss_fft.c">
       <Filter>external\kiss_fft130</Filter>
     </ClCompile>
@@ -206,11 +203,14 @@
     <ClCompile Include="..\..\..\source\ui\TextButton.cpp">
       <Filter>ui</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\audio\FftFir.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\audio\VstProcessor.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\source\audio\FftFir.h">
-      <Filter>audio</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\source\external\kiss_fft130\kiss_fft.h">
       <Filter>external\kiss_fft130</Filter>
     </ClInclude>
@@ -557,6 +557,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\source\ui\TextButton.h">
       <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\audio\FftFir.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\audio\VstProcessor.h">
+      <Filter>audio</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

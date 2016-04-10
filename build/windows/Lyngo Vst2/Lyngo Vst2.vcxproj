@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\audio\FftFir.cpp" />
+    <ClCompile Include="..\..\..\source\audio\VstProcessor.cpp" />
     <ClCompile Include="..\..\..\source\external\kiss_fft130\kiss_fft.c" />
     <ClCompile Include="..\..\..\source\external\kiss_fft130\tools\kiss_fastfir.c" />
     <ClCompile Include="..\..\..\source\external\kiss_fft130\tools\kiss_fftr.c" />
@@ -207,6 +208,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\audio\FftFir.h" />
+    <ClInclude Include="..\..\..\source\audio\VstProcessor.h" />
     <ClInclude Include="..\..\..\source\external\kiss_fft130\kiss_fft.h" />
     <ClInclude Include="..\..\..\source\external\kiss_fft130\tools\kiss_fftr.h" />
     <ClInclude Include="..\..\..\source\external\kiss_fft130\_kiss_fft_guts.h" />

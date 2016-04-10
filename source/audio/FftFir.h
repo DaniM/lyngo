@@ -2,6 +2,8 @@
 
 #include "LyngoUids.h"
 
+#include "audio/VstProcessor.h"
+
 #include "external/kiss_fft130/kiss_fft.h"
 #include "external/kiss_fft130/tools/kiss_fftr.h"
 
@@ -12,6 +14,7 @@
 
 // Dsp processor which performs fft fir filtering
 class FftFir
+	: public VstFixedBlockSizeProcessor
 {
 
 public:
@@ -20,11 +23,11 @@ public:
 		   , float&											  irTimeAccum);
 	~FftFir();
 
-	void Process(const float* const in
-				 , float* const     out
-				 , unsigned			sizeInSamples);
-
 private:
+
+	void ProcessBlock(const float* const in
+					  , float* const     out
+					  , unsigned		 sizeInSamples) override;
 
 	const float GainAdjustment = 1.0f / static_cast<float>(ZPadBlockSize);
 
