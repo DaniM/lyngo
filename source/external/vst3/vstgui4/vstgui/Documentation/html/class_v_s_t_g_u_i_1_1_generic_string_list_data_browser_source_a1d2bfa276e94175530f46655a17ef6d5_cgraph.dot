@@ -1,0 +1,20 @@
+digraph "dbGetRowHeight"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="dbGetRowHeight",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CFontDesc::\lgetPlatformFont",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_font_desc.html#af97b831edbd57148720d11f0aeacd378"];
+  Node2 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::IPlatformFont\l::create",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_platform_font.html#ab5bbf6b04fd98135937c67851192d639"];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::IPlatformFont\l::getAscent",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_platform_font.html#aa3454360094487aeb36b951588572f98",tooltip="returns the ascent line offset of the baseline of this font. If not supported returns -1 ..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::IPlatformFont\l::getDescent",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_platform_font.html#a000799e26242e86a125aeb637fc966f0",tooltip="returns the descent line offset of the baseline of this font. If not supported returns -1 ..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::IPlatformFont\l::getLeading",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_platform_font.html#aada246d8545dd390a965e2a3aeeed29a",tooltip="returns the space between lines for this font. If not supported returns -1 "];
+  Node1 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::CFontDesc::\lgetSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_font_desc.html#a41e097ceebffe54a8ed361d006164fc6",tooltip="get the height of the font "];
+}

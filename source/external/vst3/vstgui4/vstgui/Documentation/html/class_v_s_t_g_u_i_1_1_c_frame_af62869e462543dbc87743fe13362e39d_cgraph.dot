@@ -1,0 +1,33 @@
+digraph "platformOnTouchEvent"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="platformOnTouchEvent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CView::frameToLocal",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a9ee172fcd9ca5d6ee196f270717341cf",tooltip="conversion from frame coordinates to local view coordinates "];
+  Node2 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node1 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CView::onMouseMoved",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ac8855959285a9555faaa8b0313e07027",tooltip="called when a mouse move event occurs "];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::CView::hitTest",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a64e2c0bdb7ef05c4554f70217c675726",tooltip="check if where hits this view "];
+  Node4 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CPoint::offset",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_point.html#a61d5634e59d4cc12f26420875c296d77"];
+  Node5 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::CPoint::CPoint",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_point.html#a26c2b32f71f3f798bf6b5cb98a3ba9dd"];
+  Node4 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::CView::getViewSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a7b14fb07c53ccfa07dc91900f4fe01f1",tooltip="read only access to view size "];
+  Node4 -> Node8 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="VSTGUI::CPoint::isInside",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_point.html#ac0d5525acddc55a0bdea071ebb1caf92"];
+  Node1 -> Node9 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="VSTGUI::CView::onMouseCancel",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a5229f5e751d2e25e9d81ba619455a25c",tooltip="called when mouse tracking should be canceled "];
+  Node1 -> Node10 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="VSTGUI::CView::onMouseUp",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a25821e254b2ee5fabdda756c1c301fc0",tooltip="called when a mouse up event occurs "];
+  Node1 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="VSTGUI::CView::onTouchEvent",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a0a7d2ab1daddcd9bb7fd5c5abae0a308"];
+  Node1 -> Node12 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="VSTGUI::CViewContainer\l::findSingleTouchEventTarget",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view_container.html#adbaa23cfe40367b22bdaa731f4d740aa"];
+  Node1 -> Node13 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 [label="VSTGUI::CViewContainer\l::onTouchEvent",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view_container.html#a0a7d2ab1daddcd9bb7fd5c5abae0a308"];
+}

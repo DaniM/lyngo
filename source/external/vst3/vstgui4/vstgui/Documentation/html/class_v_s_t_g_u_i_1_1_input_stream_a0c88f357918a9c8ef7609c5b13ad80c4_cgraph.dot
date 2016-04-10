@@ -1,0 +1,10 @@
+digraph "operator&gt;&gt;"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="operator\>\>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="readRaw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_input_stream.html#a21a648f6725b7de8b383d76f5861178b"];
+}

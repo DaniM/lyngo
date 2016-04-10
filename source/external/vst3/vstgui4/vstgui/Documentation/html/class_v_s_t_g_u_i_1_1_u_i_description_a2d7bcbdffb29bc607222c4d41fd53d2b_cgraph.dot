@@ -1,0 +1,45 @@
+digraph "updateAttributesForView"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="updateAttributesForView",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::UIViewFactory\l::getViewName",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_view_factory.html#a1d600700cacce5fabf742df33cf26f91"];
+  Node2 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CView::getAttribute",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ad907c51bbdf1ff36fb05667bfe5011f6",tooltip="get an attribute "];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="getTemplateNameFromView",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#ad51087e5507fafdc6e67e3667125fa80"];
+  Node4 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CView::getAttributeSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#acc92600e01fe4ae180e3d45e216ee703",tooltip="get the size of an attribute "];
+  Node4 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node1 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::UIAttributes\l::setAttribute",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_attributes.html#a0769c3bb3d423df4df28c474b949608c"];
+  Node1 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::CView::getViewSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a5ad6102316e6d16e4905a38ad3f16dcc",tooltip="returns the current view size "];
+  Node1 -> Node8 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="VSTGUI::CRect::offset",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a34e2c9a2a3f466838aadef8f924ec052"];
+  Node1 -> Node9 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="VSTGUI::CView::setViewSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ada1ffb857aa147620f2d01522b37569d",tooltip="set views size "];
+  Node9 -> Node10 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="VSTGUI::CView::setDirty",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a0f19a61606a7f547b62102310063ea76",tooltip="set the view to dirty so that it is redrawn in the next idle. Thread Safe ! "];
+  Node10 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="VSTGUI::CView::invalidRect",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ad414ba3d5e64f9fdc11309e05266ffcf",tooltip="mark rect as invalid "];
+  Node11 -> Node12 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="VSTGUI::CView::isAttached",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a1b7f04ee36bdaecd09a2625370dc90d8",tooltip="is view attached to a parentView "];
+  Node11 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 -> Node13 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 [label="VSTGUI::CFrame::invalidRect",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_frame.html#ad414ba3d5e64f9fdc11309e05266ffcf",tooltip="mark rect as invalid "];
+  Node13 -> Node14 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node14 [label="VSTGUI::CView::isVisible",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a08422ee75ab02691943c1ca87e2bc563",tooltip="get visibility state "];
+  Node9 -> Node15 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node15 [label="VSTGUI::CView::getParentView",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ac45407fc7304ee33c5729fa04edaea76",tooltip="get parent view "];
+  Node9 -> Node16 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node16 [label="VSTGUI::CView::notify",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a15414e56ad0060f4b50f81ff44ad2a3e"];
+  Node1 -> Node17 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node17 [label="VSTGUI::CView::setMouseableArea",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#aaf7594f7b73a027e5895469cbce92103",tooltip="set the area in which the view reacts to the mouse "];
+  Node1 -> Node18 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node18 [label="updateViewDescription",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#a9c533dcd11cce036d6cc856a2d1c9cc4"];
+  Node18 -> Node1 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+}

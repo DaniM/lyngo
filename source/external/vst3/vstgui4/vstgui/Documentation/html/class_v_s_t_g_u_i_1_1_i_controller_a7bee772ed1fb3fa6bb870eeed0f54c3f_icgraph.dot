@@ -1,0 +1,12 @@
+digraph "getControlListener"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="getControlListener",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::UIDescription\l::getControlListener",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#ad4f8e1aecc6c2f5366775d380dd28cc1"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::DelegationController\l::getControlListener",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_delegation_controller.html#a2541f70989adac104c32cee460bcf968"];
+}

@@ -1,0 +1,35 @@
+digraph "drawString"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="drawString",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="getDrawString",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_draw_context.html#ae02f4a64e6c2b077988f56ed305ec140"];
+  Node2 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CString::setUTF8\lString",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_string.html#a84ea5d1858d74fdd5fa820c5a3d7667a"];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::IPlatformFont\l::getCapHeight",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_platform_font.html#ad6283626516bb57fa0b3efa29342bbc6",tooltip="returns the height of the highest capital letter for this font. If not supported returns -1 ..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CRect::height",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a5ca7ffa8316b6835e331dfd01534ed32"];
+  Node5 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::CRect::getHeight",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a1f4be3a475a8fb7d8defa4621c01558d"];
+  Node1 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::IFontPainter\l::getStringWidth",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_font_painter.html#a90f63e9f8279867f0221f8312341866c"];
+  Node1 -> Node8 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="VSTGUI::CRect::getWidth",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a8b4fe88292b8e95807a9b07a26cd1cb1"];
+  Node1 -> Node9 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="getClipRect",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_draw_context.html#a42623d0fc45883e1a9ac3fe21272a49e",tooltip="get the current clip "];
+  Node9 -> Node10 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="VSTGUI::CRect::offset",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a34e2c9a2a3f466838aadef8f924ec052"];
+  Node1 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="VSTGUI::CRect::bound",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a7d3a0175123b2027afae219a97ade6ae"];
+  Node1 -> Node12 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="setClipRect",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_draw_context.html#a3eb686895016175b3aa34feff499eb7c",tooltip="set the current clip "];
+  Node1 -> Node13 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 [label="VSTGUI::IFontPainter\l::drawString",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_font_painter.html#af3878a93cc49cb22dea28bd4ebfe6830"];
+  Node1 -> Node14 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node14 [label="clearDrawString",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_draw_context.html#ae0c5f28e389dcccd7e49d8474846a016"];
+  Node14 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+}

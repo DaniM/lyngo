@@ -1,0 +1,48 @@
+digraph "getHeight"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="getHeight",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CAutoAnimation\l::CAutoAnimation",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_auto_animation.html#ae79484f2e0834324b7dd6aa7b22ac73b"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CNinePartTiledBitmap\l::drawParts",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_nine_part_tiled_bitmap.html#ab6ecd4c179460ba893e0b0565e8ad4fe"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::CNinePartTiledBitmap\l::draw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_nine_part_tiled_bitmap.html#abe4a2d2349bc6a85310950ec9363beac"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CBitmapPixelAccess\l::init",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_bitmap_pixel_access.html#a6d8dc736fa79b70b4b0c65e81e96ac5c"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::CBitmapPixelAccess\l::create",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_bitmap_pixel_access.html#a30b0e1db4f10b0921bf85f82f76d3551"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::COnOffButton\l::draw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_on_off_button.html#a4d1b0aba91a42c8790d16724fd1cf08e",tooltip="called if the view should draw itself "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="VSTGUI::CCheckBox::draw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_check_box.html#ae25271b6e9cac9c3e21437c10ec491d8",tooltip="called if the view should draw itself "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="VSTGUI::CTextButton\l::draw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_text_button.html#ae25271b6e9cac9c3e21437c10ec491d8",tooltip="called if the view should draw itself "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="VSTGUI::CKnob::drawHandle",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_knob.html#a8553dad65359a30fed274fc45f109013"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="VSTGUI::CKnob::draw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_knob.html#a83ee48340580dff7f1796dbebe7b0a0f",tooltip="called if the view should draw itself "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="VSTGUI::CAnimKnob::\lCAnimKnob",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_anim_knob.html#a961b1a293e78e3779fdcaa5ce47cd4ed"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 [label="VSTGUI::CAnimKnob::\lsetBackground",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_anim_knob.html#a623ed61eec7265317899d9eae7c0c945",tooltip="set the background image of this view "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node14 [label="VSTGUI::CMovieBitmap\l::CMovieBitmap",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_movie_bitmap.html#ab7f5005eb14306c5cd408e6d41f71c11"];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node15 [label="VSTGUI::COffscreenContext\l::getHeight",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_offscreen_context.html#a1f4be3a475a8fb7d8defa4621c01558d"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node16 [label="VSTGUI::CSlider::CSlider",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_slider.html#a7b50987e1eac9f13db9a39c5639158c4"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node17 [label="VSTGUI::CSlider::setHandle",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_slider.html#a909958b251347674db5813e5c3616b5b"];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node18 [label="VSTGUI::CAnimationSplash\lScreen::sizeToFit",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_animation_splash_screen.html#a1f9f5eb3e6ae65118a2c1f15f15acab3",tooltip="resize view to optimal size "];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node19 [label="VSTGUI::CVerticalSwitch\l::CVerticalSwitch",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_vertical_switch.html#a34e486b1a0b479b926dd0bedd7ce90bf"];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node20 [label="VSTGUI::CTabView::CTabView",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_tab_view.html#a68c34233a8a8f4b56b15987b0d8e31ec"];
+  Node1 -> Node21 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node21 [label="VSTGUI::CVuMeter::draw",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_vu_meter.html#a83ee48340580dff7f1796dbebe7b0a0f",tooltip="called if the view should draw itself "];
+}

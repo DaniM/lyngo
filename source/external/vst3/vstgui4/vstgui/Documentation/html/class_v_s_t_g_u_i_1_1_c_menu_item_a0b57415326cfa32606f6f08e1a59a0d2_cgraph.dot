@@ -1,0 +1,36 @@
+digraph "CMenuItem"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="CMenuItem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="setTitle",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#afb2daf6d961426423c66598fd8c7f55b",tooltip="set title of menu item "];
+  Node1 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="getTitle",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#aa8bdc75c2d4f44c022b5a15b04f5d1d1",tooltip="returns the title of the item "];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="setIcon",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a5642dfa9fc652661b47eadd05091c6a7",tooltip="set menu item icon "];
+  Node4 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CBaseObject\l::forget",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_base_object.html#ad63e28fbe95a3458c97c60bfacd47ab8",tooltip="decrease refcount and delete object if refcount == 0 "];
+  Node4 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::CBaseObject\l::remember",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_base_object.html#ada0719d1daaca4af1795018001769311",tooltip="increase refcount "];
+  Node1 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="getIcon",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a92daa9534314d8d10b78137386117636",tooltip="returns the icon of the item "];
+  Node1 -> Node8 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="setKey",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a9a8e0a706e76bb8c2adf5ac1a3b16403",tooltip="set keycode and key modifiers of menu item "];
+  Node1 -> Node9 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="getKeycode",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#ae416011a675589378df9b38697d7bc81",tooltip="returns the keycode of the item "];
+  Node1 -> Node10 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="getKeyModifiers",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a159e09aa4b275facd4d26a6f5245f7b1",tooltip="returns the key modifiers of the item "];
+  Node1 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="setTag",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a8adf6931b3da23bab76dac845c10b5ee",tooltip="set menu item tag "];
+  Node1 -> Node12 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="getTag",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a77b4a7b5e759eb8150d49c4330496423",tooltip="returns the tag of the item "];
+  Node1 -> Node13 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 [label="setSubmenu",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#ad82def3068a469a676185f3d5de8bb4b",tooltip="set submenu of menu item "];
+  Node13 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node1 -> Node14 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node14 [label="getSubmenu",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a35205163b045ead4568470ece3aec41a",tooltip="returns the submenu of the item "];
+}

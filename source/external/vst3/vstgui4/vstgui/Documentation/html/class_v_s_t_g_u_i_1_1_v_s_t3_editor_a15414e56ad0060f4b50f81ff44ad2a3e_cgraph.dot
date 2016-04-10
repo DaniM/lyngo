@@ -1,0 +1,47 @@
+digraph "notify"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="notify",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CCommandMenuItem\l::getCommandCategory",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_command_menu_item.html#ab3bc467fd19370c7c21db264806e6712"];
+  Node1 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CCommandMenuItem\l::getCommandName",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_command_menu_item.html#a1abd2d2a4f2077a9101c618aec2a99d1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::UIAttributes\l::getAttributeValue",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_attributes.html#a89596ec36ff2787f1155282170b4f0c0"];
+  Node1 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CMenuItem::\lsetEnabled",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a013814dd3b12417a8e3bc30bb5744a71",tooltip="set menu item enabled state "];
+  Node1 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::getViewController",height=0.2,width=0.4,color="black",URL="$namespace_v_s_t_g_u_i.html#ac0caf7c5b5b1b43d55ceec218776c5b8"];
+  Node6 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::CView::getAttribute",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ad907c51bbdf1ff36fb05667bfe5011f6",tooltip="get an attribute "];
+  Node6 -> Node8 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="VSTGUI::CView::getParentView",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#ac45407fc7304ee33c5729fa04edaea76",tooltip="get parent view "];
+  Node1 -> Node9 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="VSTGUI::UIAttributes\l::getBooleanAttribute",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_attributes.html#afaa06bf50cdbe72140623c71f214f7b0"];
+  Node9 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node1 -> Node10 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="VSTGUI::CMenuItem::\lsetChecked",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_menu_item.html#a41ac8da48387a7a6516197d30e95aada",tooltip="set menu item checked state "];
+  Node1 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="VSTGUI::CNewFileSelector\l::create",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#a0552bd6ca53717b8ee1086d094f66a25",tooltip="create a new instance "];
+  Node1 -> Node12 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="VSTGUI::CNewFileSelector\l::setTitle",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#afb2daf6d961426423c66598fd8c7f55b",tooltip="set title of file selector "];
+  Node1 -> Node13 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node13 [label="VSTGUI::CNewFileSelector\l::setDefaultExtension",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#aada53477c79455330ca06df8292b7f8a",tooltip="set default file extension "];
+  Node13 -> Node14 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node14 [label="VSTGUI::CNewFileSelector\l::addFileExtension",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#ab379f4e03e9fe650ea8bbf7d5da8b42f",tooltip="add a file extension "];
+  Node1 -> Node15 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node15 [label="VSTGUI::CNewFileSelector\l::setInitialDirectory",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#ab41f599b1a51e1f384637f21a7770cc0",tooltip="set initial directory (UTF8 string) "];
+  Node1 -> Node16 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node16 [label="VSTGUI::CNewFileSelector\l::runModal",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#ab02f39b59f96ed7743729293ab06744b",tooltip="run as modal dialog "];
+  Node16 -> Node17 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node17 [label="VSTGUI::CNewFileSelector\l::runModalInternal",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#a9e36f115f8eef9a1f13bf6e9a45fee21"];
+  Node1 -> Node18 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node18 [label="VSTGUI::CNewFileSelector\l::getSelectedFile",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_new_file_selector.html#a7622aeb2d8e01864b501e5bd8785d9be",tooltip="get selected file. Result is only valid as long as the instance of CNewFileSelector is valid..."];
+  Node1 -> Node19 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node19 [label="VSTGUI::UIAttributes\l::setAttribute",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_attributes.html#a0769c3bb3d423df4df28c474b949608c"];
+  Node1 -> Node20 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node20 [label="VSTGUI::CBaseObject\l::forget",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_base_object.html#ad63e28fbe95a3458c97c60bfacd47ab8",tooltip="decrease refcount and delete object if refcount == 0 "];
+}

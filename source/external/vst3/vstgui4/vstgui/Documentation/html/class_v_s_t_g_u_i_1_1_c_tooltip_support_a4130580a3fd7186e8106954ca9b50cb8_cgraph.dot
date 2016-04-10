@@ -1,0 +1,18 @@
+digraph "onMouseMoved"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="onMouseMoved",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CRect::pointInside",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#adebba9af3dc339149fd4622f4d4a5bac",tooltip="Checks if point is inside this rect. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CVSTGUITimer\l::stop",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_v_s_t_g_u_i_timer.html#a68a350717fe6bf9012843e7c977d87b2",tooltip="stops the timer, returns wheather timer was running or not "];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::CVSTGUITimer\l::start",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_v_s_t_g_u_i_timer.html#aad5997aaaa2d622f0ca57f8b24a51a7b",tooltip="starts the timer "];
+  Node1 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CVSTGUITimer\l::setFireTime",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_v_s_t_g_u_i_timer.html#a0a04af642a6d0c108130ec436a5b94fe",tooltip="in milliseconds "];
+  Node5 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+}

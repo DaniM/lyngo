@@ -1,0 +1,17 @@
+digraph "platformGetVisibleSize"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="platformGetVisibleSize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CView::getVisible\lViewSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#a53c47f5a0cddd21e71f53237879112da",tooltip="returns the visible size of the view "];
+  Node2 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CViewContainer\l::getVisibleSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view_container.html#a78e56b14300f430d967bdd47eef4bd75"];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::CView::localToFrame",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_view.html#af69c7b7977b115f073452fc07887da55",tooltip="conversion from local view coordinates to frame coordinates "];
+  Node4 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node1 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CRect::offset",height=0.2,width=0.4,color="black",URL="$struct_v_s_t_g_u_i_1_1_c_rect.html#a34e2c9a2a3f466838aadef8f924ec052"];
+}

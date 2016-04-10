@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lyngo", "Lyngo.vcxproj", "{2CF8EF62-BA86-47FB-925F-255C130E258A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lyngo Vst2", "..\Lyngo Vst2\Lyngo Vst2.vcxproj", "{F801F442-16D8-4451-B802-1CE5AE8FA57B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Debug|x64.ActiveCfg = Debug|x64
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Debug|x64.Build.0 = Debug|x64
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Debug|x86.ActiveCfg = Debug|Win32
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Debug|x86.Build.0 = Debug|Win32
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Release|x64.ActiveCfg = Release|x64
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Release|x64.Build.0 = Release|x64
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Release|x86.ActiveCfg = Release|Win32
+		{2CF8EF62-BA86-47FB-925F-255C130E258A}.Release|x86.Build.0 = Release|Win32
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Debug|x64.ActiveCfg = Debug|x64
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Debug|x64.Build.0 = Debug|x64
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Debug|x86.ActiveCfg = Debug|Win32
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Debug|x86.Build.0 = Debug|Win32
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Release|x64.ActiveCfg = Release|x64
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Release|x64.Build.0 = Release|x64
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Release|x86.ActiveCfg = Release|Win32
+		{F801F442-16D8-4451-B802-1CE5AE8FA57B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

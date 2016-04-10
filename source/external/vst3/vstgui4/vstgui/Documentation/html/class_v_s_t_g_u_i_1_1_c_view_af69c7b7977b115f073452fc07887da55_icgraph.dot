@@ -1,0 +1,19 @@
+digraph "localToFrame"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="localToFrame",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="VSTGUI::CScrollView\l::notify",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_scroll_view.html#a15414e56ad0060f4b50f81ff44ad2a3e"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="VSTGUI::CTextEdit::\lplatformGetSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_text_edit.html#ad9f9e3ce4ccc8fced0f56afbe26a2a12"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::CTextEdit::\lplatformGetVisibleSize",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_text_edit.html#ac6723d734158ef4548dbd9dd3b24732f"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::CTextEdit::\ltakeFocus",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_text_edit.html#af199268157650ebc6dd9248a0ca04550",tooltip="called if view should take focus "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::CTextEdit::\lonMouseDown",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_text_edit.html#af5e4151d575380ad56bf87893631f03d",tooltip="called when a mouse down event occurs "];
+  Node1 -> Node1 [dir="back",color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+}

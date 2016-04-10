@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\vst2.x">
+      <UniqueIdentifier>{2bac6625-66fb-4977-8bf1-43444233d739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vstgui">
+      <UniqueIdentifier>{495f42e5-f290-42fa-864c-6a02d1f5bd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{84602d21-a63a-42bf-9120-c9435fbe6e5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Tutorial2Editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TutorialEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\TutorialVST2Effect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vstsdk2.4\public.sdk\source\vst2.x\audioeffect.cpp">
+      <Filter>Source Files\vst2.x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vstsdk2.4\public.sdk\source\vst2.x\audioeffectx.cpp">
+      <Filter>Source Files\vst2.x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\vstsdk2.4\public.sdk\source\vst2.x\vstplugmain.cpp">
+      <Filter>Source Files\vst2.x</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugin-bindings\aeffguieditor.cpp">
+      <Filter>Source Files\vstgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vstgui_win32.cpp">
+      <Filter>Source Files\vstgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\TutorialEditor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TutorialParameters.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\TutorialVST2Effect.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vstsdk2.4\public.sdk\source\vst2.x\aeffeditor.h">
+      <Filter>Source Files\vst2.x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vstsdk2.4\public.sdk\source\vst2.x\audioeffect.h">
+      <Filter>Source Files\vst2.x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\vstsdk2.4\public.sdk\source\vst2.x\audioeffectx.h">
+      <Filter>Source Files\vst2.x</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugin-bindings\aeffguieditor.h">
+      <Filter>Source Files\vstgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\pluginterfaces\vst2.x\aeffect.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\pluginterfaces\vst2.x\aeffectx.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\pluginterfaces\vst2.x\vstfxstore.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tutorial.rc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="audio">
+      <UniqueIdentifier>{8f5f6548-8bfb-4c6d-aaa6-dfa8b18a2c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{80ff1c4e-687d-49c3-8c7f-f2f59430fad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\kiss_fft130">
+      <UniqueIdentifier>{5335a120-bc1d-4a3f-aa4d-04527c6e89db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3">
+      <UniqueIdentifier>{c1f03616-14c4-4e2f-b91e-a0b5c6d2c215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\plugininterfaces">
+      <UniqueIdentifier>{93e4086e-2606-4822-af46-c0a2e159639a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\plugininterfaces\base">
+      <UniqueIdentifier>{879f9c5b-5c33-4598-8efa-941d45275bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\plugininterfaces\gui">
+      <UniqueIdentifier>{ec7fa1ad-cd13-4673-8dcf-08e6ab08c926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\plugininterfaces\vst">
+      <UniqueIdentifier>{848a9963-8af5-4828-b9be-acb67c4fbcd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\public.sdk">
+      <UniqueIdentifier>{48034138-1091-4cf3-b920-9401435ef247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\public.sdk\source">
+      <UniqueIdentifier>{1ce97907-e7bf-42d8-9790-a7404149613d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\public.sdk\source\common">
+      <UniqueIdentifier>{ff8db459-4dc4-49ea-b47f-daa7642945a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\public.sdk\source\vst">
+      <UniqueIdentifier>{295dcd43-0ac2-43ce-a486-e3e0267401f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\public.sdk\source\main">
+      <UniqueIdentifier>{5e106578-0c94-4801-9a8a-462cdac35cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\base">
+      <UniqueIdentifier>{fcb3a1f0-ef05-408f-9e7b-5689f0fddf87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external\vst3\vstgui.sf">
+      <UniqueIdentifier>{70ad5ca3-8c87-41f9-a23f-7aef00a9640f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{8d4d8edc-2a47-4f43-a970-1c874471b621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b741f778-a314-46c1-8ae2-167cd118ea2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{110729e3-f1c8-42c4-9507-29bff608a300}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\audio\FftFir.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\kiss_fft130\kiss_fft.c">
+      <Filter>external\kiss_fft130</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\kiss_fft130\tools\kiss_fastfir.c">
+      <Filter>external\kiss_fft130</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\kiss_fft130\tools\kiss_fftr.c">
+      <Filter>external\kiss_fft130</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\pluginterfaces\base\conststringtable.cpp">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\pluginterfaces\base\funknown.cpp">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\pluginterfaces\base\ustring.cpp">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\common\pluginview.cpp">
+      <Filter>external\vst3\public.sdk\source\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstaudioeffect.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstbus.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstcomponent.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstcomponentbase.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vsteditcontroller.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstguieditor.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstinitiids.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstparameters.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\main\dllmain.cpp">
+      <Filter>external\vst3\public.sdk\source\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\main\pluginfactoryvst3.cpp">
+      <Filter>external\vst3\public.sdk\source\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\baseiids.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\classfactory.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fatomic.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fbitset.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fbuffer.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fcpu.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fcriticalperformance.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fdebug.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fdynlib.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\finitializer.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fmemory.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fobject.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fpoint.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\frect.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fregion.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fstreamer.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fstring.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\fthread.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\istreamwrapper.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\timer.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\base\source\updatehandler.cpp">
+      <Filter>external\vst3\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\cvstguitimer.cpp">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\vstcontrols.cpp">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\vstgui.cpp">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\vstguidebug.cpp">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\utils\MathUtils.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\utils\RingBuffer.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\LyngoController.cpp" />
+    <ClCompile Include="..\..\..\source\LyngoEditor.cpp" />
+    <ClCompile Include="..\..\..\source\LyngoFactory.cpp" />
+    <ClCompile Include="..\..\..\source\LyngoProcessor.cpp" />
+    <ClCompile Include="..\..\..\source\LyngoFactoryVst2.cpp" />
+    <ClCompile Include="..\..\..\source\external\vst3\public.sdk\source\vst\vst2wrapper\vst2wrapper.sdk.cpp">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ui\Graph.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\ui\TextButton.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\audio\FftFir.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\kiss_fft130\kiss_fft.h">
+      <Filter>external\kiss_fft130</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\kiss_fft130\tools\kiss_fftr.h">
+      <Filter>external\kiss_fft130</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\kiss_fft130\_kiss_fft_guts.h">
+      <Filter>external\kiss_fft130</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\conststringtable.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\falignpop.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\falignpush.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\fplatform.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\fstrdefs.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\ftypes.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\funknown.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\futils.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\fvariant.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\geoconstants.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\ibstream.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\icloneable.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\ierrorcontext.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\ipersistent.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\ipluginbase.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\istringresult.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\iupdatehandler.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\keycodes.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\pluginbasefwd.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\smartpointer.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\base\ustring.h">
+      <Filter>external\vst3\plugininterfaces\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\gui\iplugview.h">
+      <Filter>external\vst3\plugininterfaces\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstattributes.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstaudioprocessor.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstautomationstate.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstchannelcontextinfo.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstcomponent.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstcontextmenu.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivsteditcontroller.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstevents.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivsthostapplication.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstinterappaudio.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstmessage.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstmidicontrollers.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstnoteexpression.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstparameterchanges.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstplugview.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstprefetchablesupport.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstprocesscontext.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstrepresentation.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\ivstunits.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\vstpresetkeys.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\vstpshpack4.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\pluginterfaces\vst\vsttypes.h">
+      <Filter>external\vst3\plugininterfaces\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\common\memorystream.h">
+      <Filter>external\vst3\public.sdk\source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\common\pluginview.h">
+      <Filter>external\vst3\public.sdk\source\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstaudioeffect.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstbus.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstcomponent.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstcomponentbase.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vsteditcontroller.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstguieditor.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\vst\vstparameters.h">
+      <Filter>external\vst3\public.sdk\source\vst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\public.sdk\source\main\pluginfactoryvst3.h">
+      <Filter>external\vst3\public.sdk\source\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\basefwd.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\classfactory.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fatomic.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fbitset.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fbuffer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fcleanup.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fcommandline.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fcontainer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fcpu.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fcriticalperformance.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fdebug.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fdynlib.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fgeoconstants.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\finitializer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fmemory.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fobject.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fpoint.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\frect.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fregion.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\frwlock_generic.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\frwlock_macosx.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\frwlock_windows.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fstdmethods.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fstreamer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fstring.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fstringmethods.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\fthread.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\funknownfactory.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\hexbinary.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\istreamwrapper.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tarray.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tassociation.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tbag.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tbinarytree.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tbtree.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tbtreedictionary.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tbtreeset.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tcontainer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tdeque.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tdictionary.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tdlist.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\thashset.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\thashtable.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\timer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tlist.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tqueue.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tringbuffer.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tstack.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\tvector.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\base\source\updatehandler.h">
+      <Filter>external\vst3\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\cvstguitimer.h">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\vstcontrols.h">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\external\vst3\vstgui.sf\vstgui\vstgui.h">
+      <Filter>external\vst3\vstgui.sf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\utils\MathUtils.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\utils\RingBuffer.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\LyngoController.h" />
+    <ClInclude Include="..\..\..\source\LyngoEditor.h" />
+    <ClInclude Include="..\..\..\source\LyngoProcessor.h" />
+    <ClInclude Include="..\..\..\source\LyngoUids.h" />
+    <ClInclude Include="..\..\..\source\LyngoVersion.h" />
+    <ClInclude Include="..\..\..\source\ui\Graph.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\ui\TextButton.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LyngoVst2.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Lyngo\Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\resources\graphics\KnobBackground.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\resources\graphics\KnobHandle.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

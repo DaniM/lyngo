@@ -1,0 +1,32 @@
+digraph "getBitmap"
+{
+  bgcolor="transparent";
+  edge [fontname="Arial",fontsize="9",labelfontname="Arial",labelfontsize="9"];
+  node [fontname="Arial",fontsize="9",shape=record];
+  rankdir="LR";
+  Node1 [label="getBitmap",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node2 [label="findChildNodeByNameAttribute",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#a08d7accaf1c7c8e7e45d353e4c3f4bd6"];
+  Node1 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node3 [label="getBaseNode",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#a2b0f673945c12c2dbf13ecdb4d768bf1"];
+  Node1 -> Node4 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node4 [label="VSTGUI::CBitmap::getPlatform\lBitmap",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_bitmap.html#af0cc9723938d902399c1780c9a09a5f1"];
+  Node1 -> Node5 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node5 [label="VSTGUI::IBitmapCreator\l::createBitmap",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_i_bitmap_creator.html#a4eb954a48f7dcb37060ac97869a509cc"];
+  Node1 -> Node6 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node6 [label="VSTGUI::CBitmap::setPlatform\lBitmap",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_c_bitmap.html#ad949ad017775b2c47b70ae61aa25f7c1"];
+  Node1 -> Node7 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node7 [label="VSTGUI::BitmapFilter\l::Factory::getInstance",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_bitmap_filter_1_1_factory.html#a492f74c5c0728e1a8ded68ff9e68a7e3"];
+  Node1 -> Node8 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node8 [label="VSTGUI::BitmapFilter\l::Factory::createFilter",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_bitmap_filter_1_1_factory.html#aeb4da3f5c29e536a063d16947b743783"];
+  Node1 -> Node9 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node9 [label="VSTGUI::BitmapFilter\l::IFilter::getProperty",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_bitmap_filter_1_1_i_filter.html#a4deb7855e10c9dff4c9e70913a2621b5"];
+  Node1 -> Node10 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node10 [label="VSTGUI::BitmapFilter\l::IFilter::setProperty",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_bitmap_filter_1_1_i_filter.html#a19bed293fcb5410ec188c0275c0a3781"];
+  Node1 -> Node11 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 [label="getColor",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#a65191b767e6715d4535b6f2c004e0b54"];
+  Node11 -> Node2 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 -> Node3 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node11 -> Node12 [color="midnightblue",fontsize="9",style="solid",fontname="Arial"];
+  Node12 [label="parseColor",height=0.2,width=0.4,color="black",URL="$class_v_s_t_g_u_i_1_1_u_i_description.html#a91263d0e7d3c7a9feacd3a6ad056bd0d"];
+}
